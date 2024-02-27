@@ -1,3 +1,5 @@
+# This initial script outlines different stages, jobs and tasks in a typical CI/CD pipeline
+
 trigger:
 - main
 

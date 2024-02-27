@@ -1,5 +1,6 @@
 # This initial script outlines different stages, jobs and tasks in a typical CI/CD pipeline
 # adding code for sast demo - sonarcube
+# adding code for sca demo - 
 
 trigger:
 - main

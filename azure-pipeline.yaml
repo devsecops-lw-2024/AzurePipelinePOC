@@ -47,7 +47,8 @@ stages:
 - stage: DeployProd
   displayName: Deploy to PROD environment
   pool:
-    vmImage: 'macOS-10.14'
+    #vmImage: 'macOS-10.14'
+    name: macOS
   jobs:
   - job: DeployFrontendProd
     displayName: Deploy frontend to PROD
@@ -58,7 +59,8 @@ stages:
   - job: DeployBackendProd
     displayName: Deploy backend to PROD
     pool:
-      vmImage: 'vs2017-win2016'
+      # vmImage: 'vs2017-win2016'
+      name: macOS
     steps:
     - script: echo deploying backend app to PROD
       displayName: deploy backend app to PROD
